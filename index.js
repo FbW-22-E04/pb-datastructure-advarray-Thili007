@@ -62,9 +62,7 @@ console.log("  -----------------------------------");
 console.log("   ++++++++++ 06 Exercise ++++++++++");
 
 const squareRootOfArray = (acc) => {
-  return acc.reduce((num) => Math.sqrt(num), [acc]);
+  return acc.map((num) => Math.sqrt(num), [acc]);
 };
 
-console.log(squareRootOfArray([2.25]));
-console.log(squareRootOfArray([9]));
-console.log(squareRootOfArray(["hello"]));
+console.log(squareRootOfArray([2.25, 4, 9, "hello"]));
